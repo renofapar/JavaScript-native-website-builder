@@ -52,7 +52,7 @@ export class TextBlock extends Block {
   }
 
   toHTML() {
-    const { styles } = this.options
-    return row(col(`<p>${this.value}</p>`), css(styles))
+    
+    return row(col(`<p>${this.value}</p>`), css(this.options.styles))
   }
 }
